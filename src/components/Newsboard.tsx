@@ -9,7 +9,7 @@ const NewsBoard = () => {
   const [table, setTable] = useState([]);
   useEffect(() => {
     fetch(
-      "https://newsapi.org/v2/top-headlines?country=in&apiKey=03f0f8fd96bf4ab4a716a4aaa6cb8b8d"
+      "https://newsapi.org/v2/top-headlines?country=in&apiKey=8ae872bfe2bd401381c158e36f31a323"
     )
       .then((response) => response.json())
       .then((data) => {
