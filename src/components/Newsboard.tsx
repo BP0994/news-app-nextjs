@@ -78,7 +78,7 @@ const NewsBoard = () => {
           );
         })}
       </div>
-      <div className="flex flex-wrap my-12 w-[400px]">
+      {/* <div className="flex flex-wrap my-12 w-[400px]">
         {table.map((data : {title:string,content:string,description:string, url:string , urlToImage:string,author:string}) => {
           return (
             <div className="my-8 flex flex-wrap" key={data.title ? data.title : "nothing"}>
@@ -92,7 +92,7 @@ const NewsBoard = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };
