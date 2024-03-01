@@ -23,7 +23,7 @@ const NewsBoard = () => {
     <div>
       <h2>all data is here</h2>
       <div className="flex flex-wrap  md:gap-x-12 sm:mx-auto max-[1170px]:max-w-[800px]   md:p-12">
-        {table.map((data : {title:string,content:string,description:string, url:string , urlToImage:string,author:string}) => {
+        {table?.map((data : {title:string,content:string,description:string, url:string , urlToImage:string,author:string}) => {
           return (
             <div className="" key={data.title ? data.title : "no title"}>
               <CardContainer className="inter-var">
@@ -78,8 +78,8 @@ const NewsBoard = () => {
           );
         })}
       </div>
-      {/* <div className="flex flex-wrap my-12 w-[400px]">
-        {table.map((data : {title:string,content:string,description:string, url:string , urlToImage:string,author:string}) => {
+      <div className="flex flex-wrap my-12 w-[400px]">
+        {table?.map((data : {title:string,content:string,description:string, url:string , urlToImage:string,author:string}) => {
           return (
             <div className="my-8 flex flex-wrap" key={data.title ? data.title : "nothing"}>
               <NewsItems
@@ -92,7 +92,7 @@ const NewsBoard = () => {
             </div>
           );
         })}
-      </div> */}
+      </div>
     </div>
   );
 };
