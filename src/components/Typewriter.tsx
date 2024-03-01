@@ -22,7 +22,7 @@ export default function TypewriterEffectSmoothDemo() {
   return (
     <div className="flex flex-col items-center justify-center h-[40rem]  ">
       <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">
-        Hi, I'm Bhupendra pal. This project is news-app.
+        Hi, Im Bhupendra pal. This project is news-app.
       </p>
       <TypewriterEffectSmooth words={words} />
       
